@@ -19,8 +19,10 @@ Pod::Spec.new do |s|
   s.author             = "Shane Rogers"
   s.platform   = :ios, '7.0'
   s.source              = { :git => 'https://github.com/phoenixbox/podTest.git', :tag => s.version.to_s }
-  s.source_files  = "FeedbackLoop", "FeedbackLoop/**/*.{h,m}"
-  s.exclude_files = "FeedbackLoop/Exclude"
+  s.preserve_paths      = 'SmokeTest.framework'
+  s.public_header_files = 'SmokeTest.framework/Versions/A/Headers/SmokeTest.h'
+  s.vendored_frameworks = 'SmokeTest.framework'
+
   s.dependency 'AFNetworking'
   s.requires_arc = true
   s.frameworks = ["Foundation", "UIKit"]
