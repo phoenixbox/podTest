@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source              = { :git => 'https://github.com/phoenixbox/podTest.git', :tag => s.version.to_s }
   s.source_files  = "FeedbackLoop", "FeedbackLoop/**/*.{h,m}"
   s.exclude_files = "FeedbackLoop/Exclude"
-  s.dependency 'AFNetworking', '2.5.0'
+  s.dependency 'AFNetworking'
   s.requires_arc = true
   s.frameworks = ["Foundation", "UIKit"]
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
