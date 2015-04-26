@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/phoenixbox/podTest"
   s.license      = "Apache License, Version 2.0"
   s.author             = "Shane Rogers"
-  spec.platform   = :ios, '7.0'
+  s.platform   = :ios, '7.0'
   s.source              = { :git => 'https://github.com/phoenixbox/podTest.git', :tag => s.version.to_s }
   s.source_files  = "FeedbackLoop", "FeedbackLoop/**/*.{h,m}"
   s.exclude_files = "FeedbackLoop/Exclude"
-  spec.dependency 'AFNetworking'
-  spec.requires_arc = true
+  s.dependency 'AFNetworking', '2.5.0'
+  s.requires_arc = true
   s.frameworks = ["Foundation", "UIKit"]
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
 
