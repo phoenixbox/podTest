@@ -22,8 +22,6 @@ Pod::Spec.new do |s|
   s.preserve_paths      = 'SmokeTest.framework'
   s.public_header_files = 'SmokeTest.framework/Versions/A/Headers/SmokeTest.h'
   s.vendored_frameworks = 'SmokeTest.framework'
-
-  s.dependency 'AFNetworking'
   s.requires_arc = true
   s.frameworks = ["Foundation", "UIKit"]
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
